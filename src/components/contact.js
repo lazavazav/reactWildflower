@@ -4,7 +4,6 @@ import Typography from '@material-ui/core/Typography';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import Paper from '@material-ui/core/Paper';
-//import AccountCircle from '@material-ui/icons/AccountCircle';
 
 function Contact() {
   return (
@@ -21,7 +20,13 @@ function Contact() {
           }}
         >
           <Typography variant='h3'>Contact Us</Typography>
-          <form name='contact' method='post'>
+          <form
+            name='contact'
+            method='post'
+            data-netlify='true'
+            onSubmit='submit'
+            data-netlify-honeypot='bot-field'
+          >
             <input type='hidden' name='form-name' value='contact' />
             <div style={{ margin: '1rem' }}>
               {' '}
@@ -66,22 +71,6 @@ function Contact() {
                 Submit
               </Button>
             </div>
-
-            <p>
-              <label htmlFor='name'>Name</label> <br />
-              <input type='text' id='name' name='name' required />
-            </p>
-            <p>
-              <label htmlFor='email'>Email</label> <br />
-              <input type='email' id='email' name='email' required />
-            </p>
-            <p>
-              <label htmlFor='message'>Message</label> <br />
-              <textarea id='message' name='message' required></textarea>
-            </p>
-            <p>
-              <input type='submit' value='Submit message' />
-            </p>
           </form>
         </Paper>
       </div>
