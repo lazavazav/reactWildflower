@@ -22,10 +22,10 @@ function Contact() {
           <Typography variant='h3'>Contact Us</Typography>
           <form
             name='contact'
+            action='src/components/success'
             method='post'
             data-netlify='true'
             onSubmit='submit'
-            action='/success/'
             data-netlify-honeypot='bot-field'
           >
             <input type='hidden' name='form-name' value='contact' />
