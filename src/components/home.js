@@ -1,27 +1,28 @@
 import React from 'react';
 import ButtonAppBar from './navbar';
 import Typography from '@material-ui/core/Typography';
-import Container from '@material-ui/core/Container';
 import background from '../assets/flowers.jpeg';
+import './home.css';
 
 function Home() {
   return (
-    <Container>
+    <div>
       <ButtonAppBar />
       <div
         style={{
-          height: '600px',
           backgroundImage: `url(${background})`,
           backgroundRepeat: 'no-repeat',
-          opacity: '.4',
+          opacity: '.3',
           backgroundPosition: 'center',
           backgroundSize: 'cover',
           position: 'relative',
+          width: '100vw',
+          height: '100vh',
         }}
       ></div>
       <div>
         <Typography
-          variant='h3'
+          variant='h4'
           style={{
             position: 'absolute',
             textAlign: 'center',
@@ -36,7 +37,7 @@ function Home() {
           to wildflower habitats that support pollinators and native wildlife
         </Typography>
       </div>
-    </Container>
+    </div>
   );
 }
 

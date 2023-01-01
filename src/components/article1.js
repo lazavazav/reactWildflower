@@ -6,7 +6,7 @@ import video from '../assets/wildflower.mp4';
 
 function Article1() {
   return (
-    <Container>
+    <div>
       <ButtonAppBar />
       <Container style={{ padding: '2rem' }}>
         <Typography variant='h4'>Project KickOff</Typography>
@@ -21,7 +21,7 @@ function Article1() {
           Your browser does not support the video tag.
         </video>
       </Container>
-    </Container>
+    </div>
   );
 }
 
