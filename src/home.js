@@ -4,6 +4,11 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
+import IdentityModal, {
+  useIdentityContext,
+  IdentityContextProvider,
+} from 'react-netlify-identity-widget';
+import 'react-netlify-identity-widget/styles.css';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -19,17 +24,50 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Home() {
   const classes = useStyles();
+  const url = 'https://cool-chaja-ab0585.netlify.app/';
 
   return (
-    <div className={classes.root}>
-      <AppBar position='static'>
-        <Toolbar>
-          <Typography variant='h6' className={classes.title}>
-            The Pines Wildflower Project
-          </Typography>
-          <Button color='inherit'>Login</Button>
-        </Toolbar>
-      </AppBar>
-    </div>
+    <IdentityContextProvider url={url}>
+      <AuthStatusView />
+    </IdentityContextProvider>
   );
+  function AuthStatusView() {
+    const identity = useIdentityContext();
+    const [dialog, setDialog] = React.useState(false);
+    const name =
+      (identity &&
+        identity.user &&
+        identity.user.user_metadata &&
+        identity.user.user_metadata.name) ||
+      '';
+    const isLoggedIn = identity && identity.isLoggedIn;
+    return (
+      <div className={classes.root}>
+        <AppBar position='static'>
+          <Toolbar>
+            <Typography variant='h6' className={classes.title}>
+              The Pines Wildflower Project
+            </Typography>
+            <div>
+              <div>
+                <Button
+                  style={{ color: 'white' }}
+                  onClick={() => setDialog(true)}
+                >
+                  {isLoggedIn ? `Hello ${name}, Log out here!` : 'Log In'}
+                </Button>
+              </div>
+              <IdentityModal
+                showDialog={dialog}
+                onCloseDialog={() => setDialog(false)}
+                onLogin={(user) => console.log('hello ', user.user_metadata)}
+                onSignup={(user) => console.log('welcome ', user.user_metadata)}
+                onLogout={() => console.log('bye ', name)}
+              />
+            </div>
+          </Toolbar>
+        </AppBar>
+      </div>
+    );
+  }
 }
