@@ -22,7 +22,7 @@ function Contact() {
           <Typography variant='h3'>Contact Us</Typography>
           <form
             name='contact'
-            action='src/components/success'
+            action='/success'
             method='post'
             data-netlify='true'
             onSubmit='submit'
