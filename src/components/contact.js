@@ -19,7 +19,7 @@ function Contact() {
             textAlign: 'center',
           }}
         >
-          <Typography variant='h3'>Contact Us</Typography>
+          <Typography variant='h4'>Contact Us</Typography>
           <form
             name='contact'
             action='/success'

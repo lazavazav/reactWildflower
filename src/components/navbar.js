@@ -5,6 +5,9 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
+import MenuIcon from '@material-ui/icons/Menu';
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
 
 const useStyles = makeStyles((theme) => ({
   title: {
@@ -17,6 +20,14 @@ const useStyles = makeStyles((theme) => ({
 
 export default function ButtonAppBar() {
   const classes = useStyles();
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
 
   return (
     <div style={{ maxWidth: '100vw', overflow: 'hidden' }}>
@@ -25,24 +36,39 @@ export default function ButtonAppBar() {
           <Typography variant='h6' className={classes.title}>
             The Pines Wildflower Project
           </Typography>
-          <Button>
-            <Link to='/' style={{ textDecoration: 'none', color: 'white' }}>
-              Home
-            </Link>
-          </Button>
-          <Button>
-            <Link to='/blog' style={{ textDecoration: 'none', color: 'white' }}>
-              Blog
-            </Link>
-          </Button>
-          <Button>
-            <Link
-              to='/contact'
-              style={{ textDecoration: 'none', color: 'white' }}
-            >
-              Contact
-            </Link>
-          </Button>
+          <MenuIcon onClick={handleClick} />
+          <Menu
+            id='simple-menu'
+            anchorEl={anchorEl}
+            keepMounted
+            open={Boolean(anchorEl)}
+            onClose={handleClose}
+          >
+            <MenuItem onClick={handleClose}>
+              {' '}
+              <Link to='/' style={{ textDecoration: 'none', color: '#262673' }}>
+                Home
+              </Link>
+            </MenuItem>
+            <MenuItem onClick={handleClose}>
+              {' '}
+              <Link
+                to='/blog'
+                style={{ textDecoration: 'none', color: '#262673' }}
+              >
+                Blog
+              </Link>
+            </MenuItem>
+            <MenuItem onClick={handleClose}>
+              {' '}
+              <Link
+                to='/contact'
+                style={{ textDecoration: 'none', color: '#262673' }}
+              >
+                Contact
+              </Link>
+            </MenuItem>
+          </Menu>
         </Toolbar>
       </AppBar>
     </div>

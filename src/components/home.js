@@ -16,7 +16,8 @@ const useStyles = makeStyles((theme) => ({
     zIndex: 2,
     color: '#262673',
     [theme.breakpoints.down('xs')]: {
-      fontSize: '24px',
+      fontSize: '20px',
+      top: '60%',
     },
   },
 }));
