@@ -1,6 +1,5 @@
 import React from 'react';
 import ButtonAppBar from './navbar';
-import Typography from '@material-ui/core/Typography';
 import background from '../assets/flowers.jpeg';
 import './home.css';
 
@@ -21,21 +20,10 @@ function Home() {
         }}
       ></div>
       <div>
-        <Typography
-          variant='h4'
-          style={{
-            position: 'absolute',
-            textAlign: 'center',
-            top: '60%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)',
-            color: '#262673',
-            zIndex: 2,
-          }}
-        >
+        <p className='title'>
           Our Mission: To transform our current greenspaces from mowed grasses
           to wildflower habitats that support pollinators and native wildlife
-        </Typography>
+        </p>
       </div>
     </div>
   );

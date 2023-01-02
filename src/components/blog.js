@@ -15,19 +15,19 @@ function Blog() {
     <>
       <ButtonAppBar />
       <div
-        style={{ margin: '2rem', display: 'flex', justifyContent: 'center' }}
+        style={{ margin: '1rem', display: 'flex', justifyContent: 'center' }}
       >
         <div style={{ width: '80%', padding: '2rem', textAlign: 'center' }}>
-          <Typography variant='h3'>Blog</Typography>
+          <Typography variant='h4'>Blog</Typography>
           <img src={image} width='75%' alt='monarch butterfly' />
-          <Typography variant='h5' style={{ marginTop: '1rem' }}>
+          <Typography variant='h6' style={{ marginTop: '1rem' }}>
             Learn how to help and to enhance your own yard to attract and foster
             native wildlife
           </Typography>
         </div>
       </div>
 
-      <div style={{ margin: '2rem' }}>
+      <div style={{ margin: '1rem' }}>
         <List component='nav' aria-label='main mailbox folders'>
           <Link to='/article1' style={{ textDecoration: 'none' }}>
             <ListItem button>

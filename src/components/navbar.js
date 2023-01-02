@@ -9,6 +9,10 @@ import { Link } from 'react-router-dom';
 const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
+    // eslint-disable-line no-useless-computed-key
+    ['@media (max-width:525px)']: {
+      fontSize: '16px',
+    },
   },
 }));
 
