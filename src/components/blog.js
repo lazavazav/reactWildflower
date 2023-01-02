@@ -34,7 +34,7 @@ function Blog() {
               <ListItemIcon>
                 <DescriptionIcon />
               </ListItemIcon>
-              <ListItemText primary='Kick Off Nov 11, 2022' />
+              <ListItemText primary='Kick Off Nov 12, 2022' />
             </ListItem>
           </Link>
           <Divider />
