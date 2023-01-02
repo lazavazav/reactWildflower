@@ -5,20 +5,20 @@ body
   margin: 0;
   overflow: hidden;
 }
-@media (max-width: 525px) {
+/* @media (max-width: 525px) {
   .title {
       font-size: 1rem; 
       top: 60%;
     }
-}
+} */
 
-.title {
+/* .title {
  font-size: 2rem;
  position: absolute;
  text-align: center;
  top: 50%;
  left: 50%;
  transform: translate(-50%, -50%);
-  z-index: 2;
-  color: #262673,
-}
+ z-index: 2;
+ color: #262673,
+} */

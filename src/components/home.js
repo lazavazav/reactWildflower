@@ -1,9 +1,28 @@
 import React from 'react';
 import ButtonAppBar from './navbar';
+import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@material-ui/core/styles';
 import background from '../assets/flowers.jpeg';
 import './home.css';
 
+const useStyles = makeStyles((theme) => ({
+  title: {
+    fontSize: '2rem',
+    position: 'absolute',
+    textAlign: 'center',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    zIndex: 2,
+    color: '#262673',
+    [theme.breakpoints.down('xs')]: {
+      fontSize: '24px',
+    },
+  },
+}));
+
 function Home() {
+  const classes = useStyles();
   return (
     <div>
       <ButtonAppBar />
@@ -20,10 +39,10 @@ function Home() {
         }}
       ></div>
       <div>
-        <p className='title'>
+        <Typography className={classes.title}>
           Our Mission: To transform our current greenspaces from mowed grasses
           to wildflower habitats that support pollinators and native wildlife
-        </p>
+        </Typography>
       </div>
     </div>
   );
