@@ -26,7 +26,7 @@ function Home() {
           style={{
             position: 'absolute',
             textAlign: 'center',
-            top: '50%',
+            top: '60%',
             left: '50%',
             transform: 'translate(-50%, -50%)',
             color: '#262673',

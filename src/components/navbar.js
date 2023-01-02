@@ -28,16 +28,16 @@ export default function ButtonAppBar() {
             </Link>
           </Button>
           <Button>
+            <Link to='/blog' style={{ textDecoration: 'none', color: 'white' }}>
+              Blog
+            </Link>
+          </Button>
+          <Button>
             <Link
               to='/contact'
               style={{ textDecoration: 'none', color: 'white' }}
             >
               Contact
-            </Link>
-          </Button>
-          <Button>
-            <Link to='/blog' style={{ textDecoration: 'none', color: 'white' }}>
-              Blog
             </Link>
           </Button>
         </Toolbar>

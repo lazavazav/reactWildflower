@@ -38,7 +38,7 @@ function Contact() {
                 label='Name'
                 placeholder='Name'
                 fullwidth
-                style={{ width: '500px' }}
+                style={{ width: '75%' }}
               />
             </div>
 
@@ -50,7 +50,7 @@ function Contact() {
                 placeholder='Email'
                 name='email'
                 required
-                style={{ width: '500px' }}
+                style={{ width: '75%' }}
               />
             </div>
             <div style={{ margin: '1rem' }}>
@@ -61,7 +61,7 @@ function Contact() {
                 placeholder='Message'
                 name='message'
                 required
-                style={{ width: '500px' }}
+                style={{ width: '75%' }}
                 multiline
                 rows={4}
               />
