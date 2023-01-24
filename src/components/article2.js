@@ -4,7 +4,6 @@ import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import Paper from '@material-ui/core/Paper';
 import image1 from '../assets/logo.png';
-import { Link } from 'react-router-dom';
 
 function Article3() {
   return (
