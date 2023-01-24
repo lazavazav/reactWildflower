@@ -38,6 +38,24 @@ function Blog() {
             </ListItem>
           </Link>
           <Divider />
+          <Link to='/article2' style={{ textDecoration: 'none' }}>
+            <ListItem button>
+              <ListItemIcon>
+                <DescriptionIcon />
+              </ListItemIcon>
+              <ListItemText primary='Awarded Grant Dec 20, 2022' />
+            </ListItem>
+          </Link>
+          <Divider />
+          <Link to='/article3' style={{ textDecoration: 'none' }}>
+            <ListItem button>
+              <ListItemIcon>
+                <DescriptionIcon />
+              </ListItemIcon>
+              <ListItemText primary='Sowing Seeds Jan 24, 2023' />
+            </ListItem>
+          </Link>
+          <Divider />
         </List>
       </div>
     </>
