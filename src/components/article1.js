@@ -14,7 +14,7 @@ function Article1() {
       <ButtonAppBar />
       <Container style={{ padding: '2rem' }}>
         <Typography variant='h4'>Project KickOff: 11/12/2022</Typography>
-        <Typography style={{ margin: '1rem' }}>
+        <Typography variant='h5' style={{ margin: '1rem' }}>
           This weekend we were outside laying cardboard and compost in both
           meadows by the walking trails. A few days before the workday, we mowed
           the area as close to ground as we could so cardboard would lay flat.

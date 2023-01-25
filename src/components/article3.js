@@ -12,7 +12,7 @@ function Article3() {
       <ButtonAppBar />
       <Container style={{ padding: '2rem' }}>
         <Typography variant='h4'>Sowing Seeds: 01/24/2023</Typography>
-        <Typography style={{ margin: '1rem' }}>
+        <Typography variant='h5' style={{ margin: '1rem' }}>
           In early January, the flower committee met to discuss purchasing seeds
           for winter sowing. Many wildflowers benefit from a cold period called
           cold stratification and some wildflowers won't germinate without it.
