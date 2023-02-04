@@ -7,6 +7,7 @@ import Article1 from './components/article1';
 import Article2 from './components/article2';
 import Article3 from './components/article3';
 import Success from './components/success';
+import Resources from './components/resources';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <Route path='article2' element={<Article2 />} />
       <Route path='article3' element={<Article3 />} />
       <Route path='success' element={<Success />} />
+      <Route path='resources' element={<Resources />} />
     </Routes>
   );
 };

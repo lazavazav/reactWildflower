@@ -67,6 +67,15 @@ export default function ButtonAppBar() {
                 Contact
               </Link>
             </MenuItem>
+            <MenuItem onClick={handleClose}>
+              {' '}
+              <Link
+                to='/resources'
+                style={{ textDecoration: 'none', color: '#262673' }}
+              >
+                Resources
+              </Link>
+            </MenuItem>
           </Menu>
         </Toolbar>
       </AppBar>
