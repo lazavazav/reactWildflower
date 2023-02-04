@@ -30,9 +30,8 @@ function Resources() {
       <Container style={{ padding: '2rem' }}>
         <Typography variant='h4'>Resources</Typography>
         <Typography variant='h5' style={{ marginTop: '1rem' }}>
-          Below are resources to learn more about helping wildlife and
-          sustaining natural habitats in your own yard, neighborhood and
-          community.
+          Learn more about helping wildlife and sustaining natural habitats in
+          your own yard, neighborhood and community.
         </Typography>
         <div
           style={{
@@ -75,7 +74,7 @@ function Resources() {
               <CardMedia
                 className={classes.media}
                 image={pollinatorsImg}
-                title='Polinator Plants'
+                title='Pollinator Plants'
               />
               <CardContent>
                 <Typography gutterBottom variant='h5' component='h2'>
