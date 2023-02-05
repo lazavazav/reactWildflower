@@ -29,7 +29,7 @@ function Blog() {
 
       <div style={{ margin: '1rem' }}>
         <List component='nav' aria-label='main mailbox folders'>
-          <Link to='/article1' style={{ textDecoration: 'none' }}>
+          <Link to='/articleKickOff' style={{ textDecoration: 'none' }}>
             <ListItem button>
               <ListItemIcon>
                 <DescriptionIcon />
@@ -38,7 +38,7 @@ function Blog() {
             </ListItem>
           </Link>
           <Divider />
-          <Link to='/article2' style={{ textDecoration: 'none' }}>
+          <Link to='/articleGrant' style={{ textDecoration: 'none' }}>
             <ListItem button>
               <ListItemIcon>
                 <DescriptionIcon />
@@ -47,12 +47,20 @@ function Blog() {
             </ListItem>
           </Link>
           <Divider />
-          <Link to='/article3' style={{ textDecoration: 'none' }}>
+          <Link to='/articleSeeds' style={{ textDecoration: 'none' }}>
             <ListItem button>
               <ListItemIcon>
                 <DescriptionIcon />
               </ListItemIcon>
               <ListItemText primary='Sowing Seeds Jan 24, 2023' />
+            </ListItem>
+          </Link>
+          <Link to='/articleBluebirds' style={{ textDecoration: 'none' }}>
+            <ListItem button>
+              <ListItemIcon>
+                <DescriptionIcon />
+              </ListItemIcon>
+              <ListItemText primary='Bluebirds Feb 05, 2023' />
             </ListItem>
           </Link>
           <Divider />

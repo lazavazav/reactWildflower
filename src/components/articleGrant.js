@@ -5,7 +5,7 @@ import Container from '@material-ui/core/Container';
 import Paper from '@material-ui/core/Paper';
 import image1 from '../assets/logo.png';
 
-function Article3() {
+function ArticleGrant() {
   return (
     <div>
       <ButtonAppBar />
@@ -66,4 +66,4 @@ function Article3() {
   );
 }
 
-export default Article3;
+export default ArticleGrant;

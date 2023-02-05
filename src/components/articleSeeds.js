@@ -6,7 +6,7 @@ import image1 from '../assets/map1.jpeg';
 import image2 from '../assets/map2.jpeg';
 import image3 from '../assets/map3.jpeg';
 
-function Article3() {
+function ArticleSeeds() {
   return (
     <div>
       <ButtonAppBar />
@@ -38,4 +38,4 @@ function Article3() {
   );
 }
 
-export default Article3;
+export default ArticleSeeds;

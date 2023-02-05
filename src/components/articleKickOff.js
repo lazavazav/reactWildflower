@@ -8,7 +8,7 @@ import image2 from '../assets/proj2.jpeg';
 import image3 from '../assets/proj3.jpeg';
 import image4 from '../assets/proj4.jpeg';
 
-function Article1() {
+function ArticleKickOff() {
   return (
     <div>
       <ButtonAppBar />
@@ -50,4 +50,4 @@ function Article1() {
   );
 }
 
-export default Article1;
+export default ArticleKickOff;

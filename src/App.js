@@ -3,11 +3,12 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './components/home';
 import Contact from './components/contact';
 import Blog from './components/blog';
-import Article1 from './components/article1';
-import Article2 from './components/article2';
-import Article3 from './components/article3';
+import ArticleKickOff from './components/articleKickOff';
+import ArticleGrant from './components/articleGrant';
+import ArticleSeeds from './components/articleSeeds';
 import Success from './components/success';
 import Resources from './components/resources';
+import ArticleBluebirds from './components/articleblueBirds';
 
 const App = () => {
   return (
@@ -15,9 +16,10 @@ const App = () => {
       <Route path='/' element={<Home />} />
       <Route path='contact' element={<Contact />} />
       <Route path='blog' element={<Blog />} />
-      <Route path='article1' element={<Article1 />} />
-      <Route path='article2' element={<Article2 />} />
-      <Route path='article3' element={<Article3 />} />
+      <Route path='articleKickoff' element={<ArticleKickOff />} />
+      <Route path='articleGrant' element={<ArticleGrant />} />
+      <Route path='articleSeeds' element={<ArticleSeeds />} />
+      <Route path='articleBluebirds' element={<ArticleBluebirds />} />
       <Route path='success' element={<Success />} />
       <Route path='resources' element={<Resources />} />
     </Routes>
